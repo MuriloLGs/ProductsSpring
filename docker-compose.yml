@@ -1,0 +1,12 @@
+  version: '3.8'
+
+  services:
+    postgres_products:
+      container_name: productsAPI
+      image: postgres
+      ports:
+        - 4040:5432
+      environment:
+        - POSTGRES_USER=admin
+        - POSTGRES_PASSWORD=admin
+        - POSTGRES_DB=products-api
